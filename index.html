@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #212121;">
+    <div class="bg-gradient-to-r from-blue-400 to-indigo-500 rounded-3xl max-w-2xl m-auto w-96 " style="height: 80vh; box-shadow: 5px 5px 10px rgb(28, 81, 255);">
+        <div class="upper flex justify-center my-10">
+            <input type="search" class="input w-52 text-gray-500 text-lg px-2 rounded-lg my-4" placeholder="Search">
+            <button type="submit" class="btn w-10 h-10 flex justify-center my-4 align-middle pt-2 bg-white rounded-full mx-2">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M17.5 17.5L22 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <div class="mid h-72 w-full m-auto ">
+            <div class="card m-auto">
+                <img class="icon m-auto h-40" src="clear.png" alt="">
+            </div>
+            <div class="temp w-20 font-semibold text-white text-4xl m-auto">32.4°C</div>
+            <div class="city w-24 py-2 font-semibold text-white text-2xl m-auto">Haldwani</div>
+        </div>
+        <div class="lower w-full h-32 justify-around rounded-3xl flex">
+            <div class="humidity flex">
+                <img class="h-8 my-2" src="humidity.png" alt="">
+                <div>
+                    <p class="text-lg font-semibold text-white px-4">Humidity | </p>
+                    <h1 class="humidityNumber text-md font-semibold text-white px-4">48%</h1>
+                </div>
+            </div>
+            <div class="windSpeed flex">
+                <img class="h-8 my-2" src="wind.png" alt="">
+                <div>
+                    <p class="text-lg font-semibold text-white px-4">Wind Speed | </p>
+                    <h1 class="speed text-md font-semibold text-white px-4">10.29 Km/h</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
